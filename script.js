@@ -63,16 +63,16 @@ function updateNoButtonText() {
 }
 
 //agregado para audio
-// document.addEventListener('touchstart', function() {
-//   const audio = document.getElementById('myAudio');
-//   audio.play();
-// });
-
 document.addEventListener('touchstart', function() {
   const audio = document.getElementById('myAudio');
-  audio.play().then(() => {
-      console.log("El audio ha comenzado a reproducirse.");
-  }).catch(function(error) {
-      console.log("No se pudo reproducir el audio: ", error);
-  });
-}, { once: true });  // El evento se ejecutará solo una vez
+  audio.play();
+});
+
+// document.addEventListener('touchstart', function() {
+//   const audio = document.getElementById('myAudio');
+//   audio.play().then(() => {
+//       console.log("El audio ha comenzado a reproducirse.");
+//   }).catch(function(error) {
+//       console.log("No se pudo reproducir el audio: ", error);
+//   });
+// }, { once: true });  // El evento se ejecutará solo una vez
